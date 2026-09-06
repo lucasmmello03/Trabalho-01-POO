@@ -12,8 +12,8 @@ public class Manutencao {
         this.data = validarData(data);
         this.tipo = validarTipoManutencao(tipo);
         this.custo = validarCusto(custo);
-        this.quilometragemMomentoRegistro = quilometragemMomentoRegistro;
-
+        this.quilometragemMomentoRegistro = validarQuilometragemMomentoRegistro(quilometragemMomentoRegistro);
+        
     }
 
     public LocalDate getData() {
@@ -57,5 +57,12 @@ public class Manutencao {
         }
 
         return custo;
+    }
+
+    private Double validarQuilometragemMomentoRegistro(Double km) {
+        if (km == null || km < 0) {
+            throw new IllegalArgumentException("Quilometragem no registro inválida");
+        }
+        return km;
     }
 }

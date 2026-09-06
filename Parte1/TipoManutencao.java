@@ -1,5 +1,5 @@
 public enum TipoManutencao {
     PREVENTIVA,
 
-    CORRETIVA;
+    CORRETIVA
 }
