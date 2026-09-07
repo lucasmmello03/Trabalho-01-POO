@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Veiculo {
 
@@ -7,7 +9,7 @@ public class Veiculo {
     private Double quilometragemAtual;
     private Double intervaloManutencaoKm;
     private Double quilometragemUltimaPreventiva;
-    private ArrayList<Manutencao> historicoManutencoes = new ArrayList<>();
+    private List<Manutencao> historicoManutencoes = new ArrayList<>();
 
     public Veiculo(String placa, String modelo, Double quilometragemAtual, Double intervaloManutencaoKm) {
 
@@ -39,8 +41,8 @@ public class Veiculo {
         return quilometragemUltimaPreventiva;
     }
 
-    public ArrayList<Manutencao> getHistoricoManutencoes() {
-        return historicoManutencoes;
+    public List<Manutencao> getHistoricoManutencoes() {
+        return Collections.unmodifiableList(historicoManutencoes);
     }
 
     public void atualizarQuilometragem(Double novaKm) {

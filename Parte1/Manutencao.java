@@ -13,7 +13,7 @@ public class Manutencao {
         this.tipo = validarTipoManutencao(tipo);
         this.custo = validarCusto(custo);
         this.quilometragemMomentoRegistro = validarQuilometragemMomentoRegistro(quilometragemMomentoRegistro);
-        
+
     }
 
     public LocalDate getData() {

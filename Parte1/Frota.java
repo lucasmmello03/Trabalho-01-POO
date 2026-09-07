@@ -25,7 +25,7 @@ public class Frota {
         if (veiculo == null) {
             throw new IllegalArgumentException("Veículo não encontrado");
         }
-        
+
         return veiculo;
     }
 
