@@ -15,9 +15,7 @@ Todas as escolhas procuram manter a lógica de funcionamento inicial, porém tra
 **2. Na Parte 2, como você decidiu representar a relação entre Turma e Matricula, e entre Matricula e Aluno? As duas relações acabaram modeladas da mesma forma, ou de formas diferentes? Por quê?**
 
 As relações foram modeladas de formas diferentes, mas complementares.
-Portanto, a classe Matricula recebe a instância independente de um Aluno e abstrai os comportamentos acadêmicos referentes a ele de forma única, ou seja, aplica para cada instância de Aluno, para o objeto, as devidas ações, como lançar uma nota e verificar se o mesmo está aprovado diante das regras de negócio.
-
-Neste cenário, a classe Turma se beneficia deste encapsulamento prévio. A Turma gerencia o seu conjunto de matrículas e faz as devidas validações globais (como limite de vagas), delegando para a Matricula as atribuições individuais de nota e o cálculo de aprovação. Assim, a Turma apenas aciona os comportamentos que já foram abstraídos de forma segura na relação entre o aluno e a sua matrícula.
+Portanto, a classe Matricula recebe a instância independente de um Aluno e abstrai os comportamentos acadêmicos referentes a ele de forma única, ou seja, aplica para cada instância de Aluno, para o objeto, as devidas ações, como lançar uma nota e verificar se o mesmo está aprovado diante das regras de negócio. Neste cenário, a classe Turma se beneficia deste encapsulamento prévio. A Turma gerencia o seu conjunto de matrículas e faz as devidas validações globais (como limite de vagas), delegando para a Matricula as atribuições individuais de nota e o cálculo de aprovação. Assim, a Turma apenas aciona os comportamentos que já foram abstraídos de forma segura na relação entre o aluno e a sua matrícula.
 
 **3. Qual regra de negócio (de qualquer uma das partes) foi mais difícil de proteger estruturalmente (isto é, através do próprio modelo, não de um if em algum lugar)? Por quê?**
 
