@@ -1,16 +1,16 @@
 **1. Quais classes você identificou em cada parte, e como decidiu as responsabilidades de cada uma? (Se usou CRC Cards, ainda que informalmente, inclua-as.)**
 
 **Parte1->** Foi identificado a necessidade da inclusão de 3 classes com responsabilidades distintas e um enum, sendo elas: 
-*`Frota.java:` Responsável apenas por cadastrar o veículo, buscar por placa e imprimir o relatório; 
-*`Manutencao.java:` Responsável por encapsular a lógica e as devidas validações específicas, juntamente das regras de negócio estabelecidas para manutenção; 
-*`Veiculo.java:` Responsável por trazer também segurança no encapsulamento, identidade nos seus comportamentos e intenção nos seus métodos;
-*`TipoManutencao.java:` Responsável por trazer robustez, ao contrário de uma simples String sem identidade, ela representa uma escolha finita de opções para manutenção.
+`Frota.java:` Responsável apenas por cadastrar o veículo, buscar por placa e imprimir o relatório; 
+`Manutencao.java:` Responsável por encapsular a lógica e as devidas validações específicas, juntamente das regras de negócio estabelecidas para manutenção; 
+`Veiculo.java:` Responsável por trazer também segurança no encapsulamento, identidade nos seus comportamentos e intenção nos seus métodos;
+`TipoManutencao.java:` Responsável por trazer robustez, ao contrário de uma simples String sem identidade, ela representa uma escolha finita de opções para manutenção.
 Todas as escolhas procuram manter a lógica de funcionamento inicial, porém trazendo os pilares de POO vistos até o momento, abstração e encapsulamento, com suas devidas validações e identidade, deixando de serem informações soltas e desconexas no Main.java.
 
 **Parte2->** Foi identificado a necessidade da inclusão de 3 classes com resposabiidades distintas, sendo elas: 
-*`Aluno.java:` Responsável por abstrair a figura de um Aluno, com suas devidas validações, o qual era tratado como uma simples String desconexa de um contexto geral de abstração;
-*`Matricula.java:` Responsável por fazer o elo entre o Aluno e a Turma, ela abstrai os atributos e métodos que competem ao controle acadêmico, como lançamento de nota e cálculo para aprovação, trazendo robustez com encapsulamento;
-*`Turma.java:` Responsável por assegurar o controle e regras de negócio de Matrícula, porém com atribuições para cada instância de um Aluno, validando as regras de negócio previamente estabelecidas, encapsulando comportamentos de listas com LinkedHashMap, e trazendo o resultado desejado para o controle academico. 
+`Aluno.java:` Responsável por abstrair a figura de um Aluno, com suas devidas validações, o qual era tratado como uma simples String desconexa de um contexto geral de abstração;
+`Matricula.java:` Responsável por fazer o elo entre o Aluno e a Turma, ela abstrai os atributos e métodos que competem ao controle acadêmico, como lançamento de nota e cálculo para aprovação, trazendo robustez com encapsulamento;
+`Turma.java:` Responsável por assegurar o controle e regras de negócio de Matrícula, porém com atribuições para cada instância de um Aluno, validando as regras de negócio previamente estabelecidas, encapsulando comportamentos de listas com LinkedHashMap, e trazendo o resultado desejado para o controle academico. 
 
 **2. Na Parte 2, como você decidiu representar a relação entre Turma e Matricula, e entre Matricula e Aluno? As duas relações acabaram modeladas da mesma forma, ou de formas diferentes? Por quê?**
 
